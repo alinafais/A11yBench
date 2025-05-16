@@ -1,0 +1,14 @@
+Querying: accessibility is:issue
+Querying: a11y is:issue
+Querying: ally is:issue
+Querying: "accessibility" OR "a11y" is:issue
+Querying: "accessibility" OR "ally" is:issue
+Querying: "accessibility" OR "ally" OR "a11y" is:issue
+
+=== Keyword Issue Counts ===
+accessibility                            -> 388285 issues
+a11y                                     -> 68698 issues
+ally                                     -> 96927 issues
+"accessibility" OR "a11y"                -> 433725 issues
+"accessibility" OR "ally"                -> 484892 issues
+"accessibility" OR "ally" OR "a11y"      -> 530216 issues
