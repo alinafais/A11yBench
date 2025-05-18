@@ -1,5 +1,6 @@
 import requests
 import time
+import csv
 
 GITHUB_TOKEN = ""
 
@@ -43,6 +44,17 @@ for keyword in keywords:
         results[keyword] = data.get("total_count", 0)
         break
 
+
 print("\n=== Keyword Issue Counts ===")
 for keyword, count in results.items():
     print(f"{keyword:40} -> {count} issues")
+
+# Save to CSV
+csv_file = "github_accessibility_issue_counts.csv"
+with open(csv_file, "w", newline='', encoding='utf-8') as f:
+    writer = csv.writer(f)
+    writer.writerow(["Keyword", "Issue Count"])
+    for keyword, count in results.items():
+        writer.writerow([keyword, count])
+
+print(f"\nSaved issue counts to {csv_file}")
