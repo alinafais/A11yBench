@@ -1,0 +1,7 @@
+Keyword,Issue Count
+accessibility,388593
+a11y,68714
+ally,97000
+"""accessibility"" OR ""a11y""",434047
+"""accessibility"" OR ""ally""",485273
+"""accessibility"" OR ""ally"" OR ""a11y""",530611
